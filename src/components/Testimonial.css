@@ -1,0 +1,24 @@
+.testimonialslider .slick-arrow.slick-prev,
+.testimonialslider .slick-arrow.slick-next {
+
+  background-color: aqua;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 5px;
+}
+.testimonialslider .slick-prev::before,
+.testimonialslider .slick-next::before {
+  display: none;
+}
+
+.slick-arrow.slick-next{
+    right: -70px;
+}
+
+.slick-arrow.slick-prev{
+    left: -70px;
+}
