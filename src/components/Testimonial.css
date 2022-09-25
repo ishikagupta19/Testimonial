@@ -1,6 +1,16 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+
+
+.slick-arrow.slick-next{
+    right: -70px;
+}
+
+.slick-arrow.slick-prev{
+    left: -70px;
+}
+
 .testimonialslider .slick-arrow.slick-prev,
 .testimonialslider .slick-arrow.slick-next {
 
@@ -18,13 +28,5 @@
 .testimonialslider .slick-prev::before,
 .testimonialslider .slick-next::before {
   display: none;
-}
-
-.slick-arrow.slick-next{
-    right: -70px;
-}
-
-.slick-arrow.slick-prev{
-    left: -70px;
 }
 

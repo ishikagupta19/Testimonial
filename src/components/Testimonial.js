@@ -1,8 +1,8 @@
+import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonial.css";
-import React, { Component } from "react";
 import Avatar from "react-avatar";
 
 export default class SimpleSlider extends Component {
@@ -17,11 +17,12 @@ export default class SimpleSlider extends Component {
     return (
       <div
         className="testimonialslider"
-        style={{ display: "flex", justifyContent: "center", marginTop: 50, marginBottom:100,paddingBottom:50, paddingTop:20 }}
+        style={{  justifyContent: "center", marginTop: 50, marginBottom:100,display: "flex", paddingBottom:50, paddingTop:20 }}
       >
-        <div style={{ width: "50%" }}>
-          <h1 style={{ marginBottom: 55 }}>Testimonial Slide</h1>
+        <div style={{ width: "60%"}}>
+         
           <Slider {...settings}>
+        
             <Cards img="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" />
             <Cards img="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(11).webp" />
             <Cards img="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(12).webp" />
@@ -38,7 +39,6 @@ const Cards = ({ img }) => {
       style={{
         display: "flex",
         alignItems: "center",
-        flexDirection: "column",
         backgroundColor:"#D3E2FF",
         borderRadius:100,
         paddingBottom:20, 
@@ -46,23 +46,16 @@ const Cards = ({ img }) => {
         paddingLeft:15,
         paddingRight:15,
         textAlign: "center",
+        flexDirection: "column",
       }}
     >
       <Avatar src={img} size="180" round={true} style={{ marginBottom: 30 }} />
       <p style={{ marginBottom: 15, fontSize:20 }}>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+      I got the words and most of the colors for my content rating system from Rated Reads.  I will post some sort of rating for the content of the book kind of like movie ratings. After each content rating, I will add a few descriptions (like they do with movies) about why I thought it should be rated that. 
       </p>
       <p>
         <span
-          style={{ fontWeight: 500, color: "lightgray", fontStyle: "italic" }}
+          style={{ fontWeight: 400, color: "darkblue"}}
         >
           Name
         </span>
@@ -71,3 +64,4 @@ const Cards = ({ img }) => {
     </div>
   );
 };
+
