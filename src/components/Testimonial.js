@@ -17,7 +17,7 @@ export default class SimpleSlider extends Component {
     return (
       <div
         className="testimonialslider"
-        style={{ display: "flex", justifyContent: "center", marginTop: 50, marginBottom:100 }}
+        style={{ display: "flex", justifyContent: "center", marginTop: 50, marginBottom:100,paddingBottom:50, paddingTop:20 }}
       >
         <div style={{ width: "50%" }}>
           <h1 style={{ marginBottom: 55 }}>Testimonial Slide</h1>
@@ -39,7 +39,12 @@ const Cards = ({ img }) => {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-
+        backgroundColor:"#D3E2FF",
+        borderRadius:100,
+        paddingBottom:20, 
+        paddingTop:30,
+        paddingLeft:15,
+        paddingRight:15,
         textAlign: "center",
       }}
     >
