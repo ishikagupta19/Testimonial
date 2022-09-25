@@ -1,7 +1,12 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .testimonialslider .slick-arrow.slick-prev,
 .testimonialslider .slick-arrow.slick-next {
 
-  background-color: aqua;
+  color: rgb(141, 141, 141) !important; 
+  background-color: rgb(104, 104, 104);
+
   width: 40px;
   height: 40px;
   display: flex;
@@ -22,3 +27,4 @@
 .slick-arrow.slick-prev{
     left: -70px;
 }
+
